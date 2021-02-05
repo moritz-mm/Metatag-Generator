@@ -1,13 +1,15 @@
 import { reactive } from "vue";
 
 interface Specifications {
-    url: string,
+    website: string,
     title: string,
-    description: string
+    description: string,
+    imageUrl: string
 }
 
 export const specifications = reactive({
-    url: "https://example.com/",
-    title: "My Homepage • example.com",
-    description: ""
+    website: "",
+    title: "",
+    description: "",
+    imageUrl: "",
 } as Specifications);

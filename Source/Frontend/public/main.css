@@ -506,8 +506,8 @@
           box-sizing: border-box;
   resize: none;
   color: white;
-  background-color: dodgerblue;
-  border-color: dodgerblue;
+  background-color: #48466d;
+  border-color: #48466d;
   border-style: solid;
   border-width: 1px;
   padding: 0.7rem 1rem;
@@ -545,13 +545,13 @@
 }
 
 .btn.primary:not(:disabled):hover {
-  background-color: #007ef9;
-  border-color: #007ef9;
+  background-color: #3a3857;
+  border-color: #3a3857;
 }
 
 .btn.primary:not(:disabled):active {
-  background-color: #0074e5;
-  border-color: #0074e5;
+  background-color: #31304b;
+  border-color: #31304b;
 }
 
 .btn.primary:disabled {
@@ -568,7 +568,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   resize: none;
-  color: dodgerblue;
+  color: #48466d;
   background-color: white;
   border-color: white;
   border-style: solid;
@@ -631,7 +631,7 @@
   resize: none;
   color: black;
   background-color: white;
-  border-color: dodgerblue;
+  border-color: #48466d;
   border-style: solid;
   border-width: 1px;
   padding: 0.7rem 1rem;
@@ -668,12 +668,12 @@
 
 .btn.primary.outline:not(:disabled):hover {
   background-color: #ededed;
-  border-color: #007ef9;
+  border-color: #3a3857;
 }
 
 .btn.primary.outline:not(:disabled):active {
   background-color: #e3e3e3;
-  border-color: #0074e5;
+  border-color: #31304b;
 }
 
 .btn.primary.outline:disabled {
@@ -1247,7 +1247,7 @@
   resize: none;
   color: black;
   background-color: white;
-  border-color: dodgerblue;
+  border-color: #48466d;
   border-style: solid;
   border-width: 1px;
   padding: 0.7rem 1rem;
@@ -1285,12 +1285,12 @@
 
 .input:not(:disabled):hover {
   background-color: #ededed;
-  border-color: #007ef9;
+  border-color: #3a3857;
 }
 
 .input:not(:disabled):active {
   background-color: #e3e3e3;
-  border-color: #0074e5;
+  border-color: #31304b;
 }
 
 .input:disabled {
@@ -1299,7 +1299,7 @@
 }
 
 .input:focus {
-  border-color: dodgerblue;
+  border-color: #48466d;
 }
 
 .input[type=checkbox] {
@@ -1321,7 +1321,7 @@
 }
 
 .link.primary {
-  color: dodgerblue;
+  color: #48466d;
   background-color: transparent;
   text-align: center;
   text-decoration: none;
@@ -1447,6 +1447,26 @@
   font-size: 1.15rem;
 }
 
+.text.neutral {
+  color: gainsboro;
+}
+
+.text.primary {
+  color: #48466d;
+}
+
+.text.danger {
+  color: #CA0B00;
+}
+
+.text.success {
+  color: #589C48;
+}
+
+.text.warning {
+  color: #ffcc00;
+}
+
 * {
   border: none;
 }
@@ -1535,7 +1555,7 @@
           box-sizing: border-box;
   resize: none;
   color: white;
-  background-color: dodgerblue;
+  background-color: #48466d;
   border-color: white;
   border-style: solid;
   border-width: 1px;

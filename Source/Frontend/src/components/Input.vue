@@ -1,32 +1,46 @@
 <template>
-    <section class="box outline round flex col">
-        <div class="flex row col-center space-between p-a-1">
-            <h2 class="text h-5">
-                Input
+    <section id="input" class="flex col">
+        <div class="flex row col-center">
+            <h2 class="m-y-2 text h-4">
+                Metadaten
             </h2>
-            <button class="btn primary round shadow">
-                Generate
-            </button>
         </div>
-        <hr class="hr" />
-        <form class="p-a-1 m-y-block-2">
+        <form class="box outline round p-a-2 m-y-block-2">
             <fieldset class="flex col">
-                <label class="text strong">
-                    Url
+                <label for="website" class="text strong">
+                    Webseite
                 </label>
-                <input class="input round" type="url" placeholder="https://example.com/" v-model="url" />
+                <input id="website" class="input round" type="url" placeholder="https://example.com/" v-model="website" />
             </fieldset>
             <fieldset class="flex col">
-                <label class="text strong">
-                    Title
-                </label>
-                <input class="input round" type="text" placeholder="My Homepage • example.com" v-model="title" />
+                <div class="flex row space-between">
+                    <label for="title" class="text strong">
+                        Titel 
+                    </label>
+                    <p>
+                        {{ title.length }} / 70
+                    </p>
+                </div>
+                <input id="title" class="input round" type="text" placeholder="Der Titel sollte beschreiben was man von dem Inhalt einer Webseite erwarten kann." v-model="title" />
+                <Warning v-show="title.length > 70" message="Der Title tag sollte nicht länger als <strong>70</strong> Zeichen sein." />
             </fieldset>
             <fieldset class="flex col">
-                <label class="text strong">
-                    Description
+                <div class="flex row space-between">
+                    <label for="description" class="text strong">
+                        Beschreibung
+                    </label>
+                    <p>
+                        {{ description.length }} / 160
+                    </p>
+                </div>
+                <textarea id="description" class="input round" placeholder="Die Beschreibung ist eine kurze Zusammenfassung des Inhalts einer Webseite." v-model="description"></textarea>
+                <Warning v-show="description.length > 160" message="Eine Meta Beschreibung sollte nicht länger als <strong>160</strong> Zeichen sein." />
+            </fieldset>
+            <fieldset class="flex col">
+                <label for="imageUrl" class="text strong">
+                    Link zum Vorschaubild
                 </label>
-                <textarea class="input round" placeholder="Description..." v-model="description"></textarea>
+                <input id="imageUrl" class="input round" type="url" placeholder="https://example.com/preview.png" v-model="imageUrl" />
             </fieldset>
         </form>
     </section>
@@ -35,9 +49,13 @@
 <script lang="ts">
 import { defineComponent, toRefs } from "vue";
 import { specifications } from '../modules/Generator';
+import Warning from './Warning.vue';
 
 export default defineComponent({
     name: "Input",
+    components: {
+        Warning  
+    },
     setup() {
         return { 
             ...toRefs(specifications) 
