@@ -8,14 +8,14 @@
                 Text Kopieren
             </button>
         </div>
-        <p class="box neutral round p-a-2 text h-6 wrap" contentEditable="true" spellcheck="false" style="white-space: pre-line">
+        <p class="box neutral round p-a-2 text h-6 wrap" contenteditable="true" spellcheck="false" style="white-space: pre-line">
             {{ generatedMeta }}
         </p>
     </section>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, toRefs } from "vue";
+import { computed, defineComponent } from "vue";
 import { specifications } from '../modules/Generator';
 import Input from "./Input.vue";
 
