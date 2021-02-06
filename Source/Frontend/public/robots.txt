@@ -1,1 +1,1 @@
-Sitemap: https://metatags-generator.com/sitemap.xml
+Sitemap: https://metatag-generator.com/sitemap.xml
