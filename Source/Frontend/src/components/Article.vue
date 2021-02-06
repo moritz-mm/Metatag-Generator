@@ -1,24 +1,24 @@
 <template>
     <article class="flex col m-t-2 m-y-block-2">
         <h1 class="text h-2">
-            Was sind Metatags?
+            Was sind Meta Tags?
         </h1>
         <blockquote class="text h-6">
-            Metatags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
-            Metatags sind dafür da, den Inhalt einer Webseite zu beschreiben, sodass Suchmaschinen ihn in den Suchergebnissen präsentieren können.
+            Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
+            Meta Tags sind dafür da, den Inhalt einer Webseite zu beschreiben, sodass Suchmaschinen ihn in den Suchergebnissen präsentieren können.
         </blockquote>
 
         <h1 class="text h-2">
-            Was sind die wichtigsten Metatags?
+            Was sind die wichtigsten Meta Tags?
         </h1>
         <blockquote class="text h-6">
-            Hier sind die <strong>wichtigsten Metatags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (SEO) sortiert beschrieben:
+            Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (SEO) sortiert beschrieben:
         </blockquote>
         <nav class="text h-6">
             <a class="link primary" href="#title-tag">1. Der Titel Tag</a> <br />
             <a class="link primary" href="#meta-description">2. Die Meta Beschreibung</a> <br />
             <a class="link primary" href="#alt-text">3. Der alternativ Text für Bilder</a> <br />
-            <a class="link primary" href="#social-media">4. Metatags für soziale Medien wie Facebook, Twitter und co.</a> <br />
+            <a class="link primary" href="#social-media">4. Meta Tags für soziale Medien wie Facebook, Twitter und co.</a> <br />
             <a class="link primary" href="#meta-charset">5. Meta-Charset</a> <br />
             <a class="link primary" href="#meta-viewport">6. Meta-Viewport</a> <br />
         </nav>
@@ -86,7 +86,7 @@
         </ul>
 
         <h2 id="social-media" class="text h-3">
-            4. Metatags für soziale Medien wie Facebook, Twitter und co.
+            4. Meta Tags für soziale Medien wie Facebook, Twitter und co.
         </h2>
         <blockquote class="text h-6">
             Wenn jemand deine Webseite auf Facebook, Twitter und co. verlinkt, geben die Plattformen eine Möglichkeit, den Link "schön" darzustellen.
