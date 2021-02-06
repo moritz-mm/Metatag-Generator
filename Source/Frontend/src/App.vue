@@ -3,6 +3,7 @@
     <main class="flex col col-center p-a-2">
         <Input />
         <Output />
+        <Article />
     </main>
     <Footer />
 </template>
@@ -13,6 +14,7 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Input from './components/Input.vue';
 import Output from './components/Output.vue';
+import Article from './components/Article.vue';
 
 export default defineComponent({
   name: 'App',
@@ -20,7 +22,8 @@ export default defineComponent({
     Header,
     Footer,
     Input,
-    Output
+    Output,
+    Article
   }
 });
 </script>
