@@ -1,13 +1,16 @@
 <template>
-    <section id="output" class="box">
+    <section id="output">
         <div class="flex row col-center space-between">
             <h2 class="m-y-2 text h-4">
-                Die generierten Metatags
+                Ausgabe
             </h2>
             <button class="btn primary shadow round" @click="copyToClipboard">
                 Text Kopieren
             </button>
         </div>
+        <p class="m-b-1">
+            Die Metatags müssen in den <strong>&lt;head&gt;...&lt;/head&gt;</strong> rein kopiert werden.
+        </p>
         <p class="box neutral round p-a-2 text h-6 wrap" contenteditable="true" spellcheck="false" style="white-space: pre-line">
             {{ generatedMeta }}
         </p>
