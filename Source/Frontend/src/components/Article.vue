@@ -14,8 +14,16 @@
         <blockquote class="text h-6">
             Hier sind die <strong>wichtigsten Metatags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (SEO) sortiert beschrieben:
         </blockquote>
+        <nav class="text h-6">
+            <a class="link primary" href="#title-tag">1. Der Titel Tag</a> <br />
+            <a class="link primary" href="#meta-description">2. Die Meta Beschreibung</a> <br />
+            <a class="link primary" href="#alt-text">3. Der alternativ Text für Bilder</a> <br />
+            <a class="link primary" href="#social-media">4. Metatags für soziale Medien wie Facebook, Twitter und co.</a> <br />
+            <a class="link primary" href="#meta-charset">5. Meta-Charset</a> <br />
+            <a class="link primary" href="#meta-viewport">6. Meta-Viewport</a> <br />
+        </nav>
 
-        <h2 class="text h-3">
+        <h2 id="title-tag" class="text h-3">
             1. Der Titel Tag
         </h2>
         <code class="box neutral round p-a-1 text h-6">
@@ -37,7 +45,7 @@
         </ul>
 
 
-        <h2 class="text h-3">
+        <h2 id="meta-description" class="text h-3">
             2. Die Meta Beschreibung
         </h2>
         <code class="box neutral round p-a-1 text h-6">
@@ -58,7 +66,7 @@
         </ul>
 
 
-        <h2 class="text h-3">
+        <h2 id="alt-text" class="text h-3">
             3. Der alternativ Text für Bilder
         </h2>
         <code class="box neutral round p-a-1 text h-6">
@@ -77,7 +85,7 @@
             <li>• Die Datei Größe von Bildern sollte so klein wie möglich sein.</li>
         </ul>
 
-        <h2 class="text h-3">
+        <h2 id="social-media" class="text h-3">
             4. Metatags für soziale Medien wie Facebook, Twitter und co.
         </h2>
         <blockquote class="text h-6">
@@ -103,6 +111,29 @@
             &lt;meta property="twitter:image" content="Ein Vorschau Bild als Url" /&gt; <br />
             &lt;meta property="twitter:url" content="Die Url deiner Webseite" /&gt; <br />
         </code>
+
+
+        <h2 id="meta-charset" class="text h-3">
+            5. Meta-Charset
+        </h2>
+        <code class="box neutral round p-a-1 text h-6">
+            &lt;meta charset="UTF-8" /&gt;
+        </code>
+        <blockquote class="text h-6">
+            Der Meta-Charset-Tag setzt die Codierung für eine Webseite fest.
+            Er beschreibt, wie der Browser die Webseite anzeigen soll, damit zum Beispiel Umlaute richtig dargestellt werden.
+        </blockquote>
+
+        <h2 id="meta-viewport" class="text h-3">
+            6. Meta-Viewport
+        </h2>
+        <code class="box neutral round p-a-1 text h-6">
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+        </code>
+        <blockquote class="text h-6">
+            Der Meta-Viewport beschreibt, wie der sichtbare Bereich einer Webseite dargestellt werden soll.
+            Er wird dafür genutzt, um dem Browser zu mitzuteilen, wie eine Seite für verschiedene Bildschirmgrößen aussehen soll.
+        </blockquote>
     </article>
 </template>
 
