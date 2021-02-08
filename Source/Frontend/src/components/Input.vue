@@ -19,13 +19,13 @@
                     </label>
                     <div class="flex row m-x-block-2">
                         <p>
-                            {{ titleWidth }} von 580 pixel
+                            {{ titleWidth }} / 580px
                         </p>
                         <p>
                             •
                         </p>
                         <p>
-                            {{ title.length }} von 70 Zeichen
+                            {{ title.length }} / 70
                         </p>
                     </div>
                 </div>
@@ -40,13 +40,13 @@
                     </label>
                     <div class="flex row m-x-block-2">
                         <p>
-                            {{ descriptionWidth }} von 680 oder 920 pixel
+                            {{ descriptionWidth }} / 920px
                         </p>
                         <p>
                             •
                         </p>
                         <p>
-                            {{ description.length }} von 160 Zeichen
+                            {{ description.length }} / 160
                         </p>
                     </div>
                 </div>

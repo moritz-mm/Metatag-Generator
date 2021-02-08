@@ -6,15 +6,17 @@
             </h2>
         </div>
         <div class="box outline shadow round p-a-2">
-            <p id="googleUrl">
-                {{ website || "example.com" }}
-            </p>
-            <p id="googleTitle">
-                {{ title || "Das ist ein Beispieltitel." }}
-            </p>
-            <p id="googleDescription">
-                {{ description || "Das ist eine Beispielbeschreibung." }}
-            </p>
+            <div id="googleContent">
+                <p id="googleUrl">
+                    {{ website || "example.com" }}
+                </p>
+                <p id="googleTitle">
+                    {{ title || "Das ist ein Beispieltitel." }}
+                </p>
+                <p id="googleDescription">
+                    {{ description || "Das ist eine Beispielbeschreibung." }}
+                </p>
+            </div>
         </div>
     </section>
 </template>
@@ -47,6 +49,9 @@ export default defineComponent({
 </script>
 
 <style scoped>
+    #googleContent {
+        max-width: 600px;
+    }
     #googleUrl {
         color: #202124;
         font-size: 14px;
