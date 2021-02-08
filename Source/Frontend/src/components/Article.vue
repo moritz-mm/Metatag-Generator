@@ -37,7 +37,8 @@
             So sieht der optimale Titel Tag aus:
         </p>
         <ul class="text h-6">
-            <li>• Maximal <strong>70 Zeichen</strong> lang.</li>
+            <li>• Sollte nicht länger als <strong>70 Zeichen</strong> sein.</li>
+            <li>• Maximal <strong>580 pixel</strong> sonst wird der Titel auf Desktops abgeschnitten.</li>
             <li>• Primärkeyword muss am Anfang stehen.</li>
             <li>• Füg Zahlen hinzu z.B. "Die <strong>5</strong> wichtigsten Keywörter für SEO in 2021."</li>
             <li>• Benutze nicht zu viele Keywörter. (<a class="link primary" target="_blank" rel="noreferrer noopener" href="https://www.seo-kueche.de/lexikon/keyword-stuffing/">Keyword stuffing</a>)</li>
@@ -59,7 +60,8 @@
             So sieht die optimale Meta Beschreibung aus:
         </p>
         <ul class="text h-6">
-            <li>• Maximal <strong>160 Zeichen</strong> lang, sonst wird der Text abgeschnitten.</li>
+            <li>• Sollte nicht länger als <strong>160 Zeichen</strong> sein.</li>
+            <li>• Maximal <strong>920 pixel</strong> breit für Desktops und <strong>680 pixel</strong> für Smartphones, sonst wird der Text abgeschnitten.</li>
             <li>• Keywörter von dem Titel müssen enthalten sein.</li>
             <li>• Genau Beschreiben, was man von der Webseite zu erwarten hat.</li>
             <li>• <strong>Keine</strong> Aufforderung wie: "Kaufen sie jetzt!". (<a class="link primary" target="_blank" rel="noreferrer noopener" href="https://de.wikipedia.org/wiki/Call_to_Action_(Marketing)">Call-to-action</a>)</li>

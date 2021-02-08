@@ -1,6 +1,7 @@
 <template>
     <Header />
     <main class="flex col col-center p-a-2">
+        <Preview />
         <Input />
         <Output />
         <Article />
@@ -14,6 +15,7 @@ import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
 import Input from './components/Input.vue';
 import Output from './components/Output.vue';
+import Preview from './components/Preview.vue';
 import Article from './components/Article.vue';
 
 export default defineComponent({
@@ -23,6 +25,7 @@ export default defineComponent({
     Footer,
     Input,
     Output,
+    Preview,
     Article
   }
 });

@@ -17,24 +17,43 @@
                     <label for="title" class="text strong">
                         Titel 
                     </label>
-                    <p>
-                        {{ title.length }} / 70
-                    </p>
+                    <div class="flex row m-x-block-2">
+                        <p>
+                            {{ titleWidth }} von 580 pixel
+                        </p>
+                        <p>
+                            •
+                        </p>
+                        <p>
+                            {{ title.length }} von 70 Zeichen
+                        </p>
+                    </div>
                 </div>
                 <input id="title" class="input round" type="text" placeholder="Der Titel sollte beschreiben was man von dem Inhalt einer Webseite erwarten kann." v-model="title" />
-                <Warning v-show="title.length > 70" message="Der Title tag sollte nicht länger als <strong>70</strong> Zeichen sein." />
+                <Warning v-show="title.length > 70" message="Ein Titel Tag, sollte nicht länger als <strong>70</strong> Zeichen sein." />
+                <Warning v-show="titleWidth > 580" message="Ein Titel Tag, der breiter als <strong>580 pixel</strong> ist, wird auf <strong>Desktops</strong> abgeschnitten." />
             </fieldset>
             <fieldset class="flex col">
                 <div class="flex row space-between">
                     <label for="description" class="text strong">
                         Beschreibung
                     </label>
-                    <p>
-                        {{ description.length }} / 160
-                    </p>
+                    <div class="flex row m-x-block-2">
+                        <p>
+                            {{ descriptionWidth }} von 680 oder 920 pixel
+                        </p>
+                        <p>
+                            •
+                        </p>
+                        <p>
+                            {{ description.length }} von 160 Zeichen
+                        </p>
+                    </div>
                 </div>
                 <textarea id="description" class="input round" placeholder="Die Beschreibung ist eine kurze Zusammenfassung des Inhalts einer Webseite." v-model="description"></textarea>
-                <Warning v-show="description.length > 160" message="Eine Meta Beschreibung sollte nicht länger als <strong>160</strong> Zeichen sein." />
+                <Warning v-show="description.length > 160" message="Eine Meta Beschreibung, sollte nicht länger als <strong>160</strong> Zeichen sein." />
+                <Warning v-show="descriptionWidth > 680" message="Eine Meta Beschreibung, die breiter als <strong>680 pixel</strong> ist, wird auf <strong>Smartphones</strong> abgeschnitten." />
+                <Warning v-show="descriptionWidth > 920" message="Eine Meta Beschreibung, die breiter als <strong>920 pixel</strong> ist, wird auf <strong>Desktops</strong> abgeschnitten." />
             </fieldset>
             <fieldset class="flex col">
                 <label for="imageUrl" class="text strong">
@@ -47,8 +66,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, toRefs } from "vue";
+import { computed, defineComponent, toRefs } from "vue";
 import { specifications } from '../modules/Generator';
+import { measureTextWidth, googleTitleFont, googleDescriptionFont } from '../modules/TextMesurer';
 import Warning from './Warning.vue';
 
 export default defineComponent({
@@ -57,8 +77,13 @@ export default defineComponent({
         Warning  
     },
     setup() {
+        const titleWidth = computed(() => measureTextWidth(specifications.title, googleTitleFont));
+        const descriptionWidth = computed(() => measureTextWidth(specifications.description, googleDescriptionFont));
+
         return { 
-            ...toRefs(specifications) 
+            ...toRefs(specifications),
+            titleWidth,
+            descriptionWidth
         }
     }
 });
