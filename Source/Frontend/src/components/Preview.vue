@@ -5,7 +5,7 @@
                 Google Vorschau
             </h2>
         </div>
-        <div class="box shadow round p-a-2">
+        <div class="box outline shadow round p-a-2">
             <p id="googleUrl">
                 {{ website || "example.com" }}
             </p>
