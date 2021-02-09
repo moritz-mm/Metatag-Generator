@@ -2,7 +2,7 @@
     <section id="preview">
         <div class="flex row col-center">
             <h2 class="m-y-2 text h-4">
-                Google Vorschau
+                SERP Vorschau
             </h2>
         </div>
         <div class="box outline shadow round p-a-2">
@@ -29,7 +29,7 @@ export default defineComponent({
     name: "Preview",
     setup() {
         const website = computed(() => truncate(specifications.website, 70).trim());
-        const title = computed(() => truncate(specifications.title, 70).trim());
+        const title = computed(() => specifications.title.trim());
         const description = computed(() => truncate(specifications.description, 160).trim());
 
         function truncate(text: string, cutAt: number) {
