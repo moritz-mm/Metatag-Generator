@@ -1,19 +1,13 @@
 <template>
     <article class="flex col m-t-2 m-y-block-2">
-        <h1 class="text h-2">
-            Was sind Meta Tags?
-        </h1>
-        <blockquote class="text h-6">
-            Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
-            Meta Tags sind dafür da, den Inhalt einer Webseite zu beschreiben, sodass Suchmaschinen ihn in den Suchergebnissen präsentieren können.
-        </blockquote>
-
-        <h1 class="text h-2">
-            Was sind die wichtigsten Meta Tags?
-        </h1>
-        <blockquote class="text h-6">
-            Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (SEO) sortiert beschrieben:
-        </blockquote>
+        <div class="flex row center">
+            <h1 class="text h-1 m-y-2">
+                Was sind die wichtigsten Meta Tags?
+            </h1>
+        </div>
+        <p class="text h-6">
+            Inhalt
+        </p>
         <nav class="text h-6">
             <a class="link primary" href="#title-tag">1. Der Titel Tag</a> <br />
             <a class="link primary" href="#meta-description">2. Die Meta Beschreibung</a> <br />
@@ -22,6 +16,18 @@
             <a class="link primary" href="#meta-charset">5. Meta-Charset</a> <br />
             <a class="link primary" href="#meta-viewport">6. Meta-Viewport</a> <br />
         </nav>
+
+
+        <h2 class="text h-3">
+            Erst mal. Was sind überhaupt Meta Tags?
+        </h2>
+        <blockquote class="text h-6">
+            Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
+            Meta Tags sind dafür da, den Inhalt einer Webseite zu beschreiben, sodass Suchmaschinen ihn in den Suchergebnissen präsentieren können.
+        </blockquote>
+        <blockquote class="text h-6">
+            Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (SEO) sortiert beschrieben:
+        </blockquote>
 
         <h2 id="title-tag" class="text h-3">
             1. Der Titel Tag
