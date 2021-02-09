@@ -75,7 +75,7 @@ export default defineComponent({
         padding-top: 4px;
         margin-block-end: 3px;
         margin-bottom: 3px;
-        width: 100%;
+        max-width: 580px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
