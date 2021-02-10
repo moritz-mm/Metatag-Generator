@@ -15,11 +15,11 @@ export const specifications = reactive({
 } as Specifications);
 
 export async function fetchMetaTags(url: string) {
-    const response = await fetch(url, {
+    const response = await fetch(!/^https?:\/\//i.test(url) ? `https://${url}` : url, {
         headers: {
             "Content-Type": "text/html"
         }
-    });
+    }).catch();
 
     const domParser = new DOMParser();
     const dom = domParser.parseFromString(await response.text(), "text/html");
