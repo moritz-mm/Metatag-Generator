@@ -21,7 +21,7 @@ export async function fetchMetaTags(url: string) {
         }
     }).catch(err => console.warn(`Die Website zu der Url "${url}" wurde nicht gefunden.`));
 
-    if (response !== null) {
+    if (response !== undefined) {
         const domParser = new DOMParser();
         const dom = domParser.parseFromString(await response.text(), "text/html");
     
