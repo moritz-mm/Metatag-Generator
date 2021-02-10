@@ -13,3 +13,22 @@ export const specifications = reactive({
     description: "",
     imageUrl: "",
 } as Specifications);
+
+export async function fetchMetaTags(url: string) {
+    const response = await fetch(url, {
+        headers: {
+            "Content-Type": "text/html"
+        }
+    });
+
+    const domParser = new DOMParser();
+    const dom = domParser.parseFromString(await response.text(), "text/html");
+
+    specifications.website = response.url;
+    specifications.title = dom.getElementsByTagName("title")[0].text;
+    dom.getElementsByName("meta").forEach(tag => {
+        if (tag.getAttribute("name") === "description") {
+            specifications.description = tag.getAttribute("content") || "";
+        }
+    });
+}
