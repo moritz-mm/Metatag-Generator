@@ -31,7 +31,8 @@ export async function fetchMetaTags(url: string) {
         const meta = metaTags[i];
         if (meta.name === "description") {
             specifications.description = meta.content;
-            return;
+        } else if (meta.getAttribute("property") === "og:image" || "twitter:image") {
+            specifications.imageUrl = meta.content;
         }
     }
 }
