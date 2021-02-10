@@ -26,9 +26,12 @@ export async function fetchMetaTags(url: string) {
 
     specifications.website = response.url;
     specifications.title = dom.getElementsByTagName("title")[0].text;
-    dom.getElementsByName("meta").forEach(tag => {
-        if (tag.getAttribute("name") === "description") {
-            specifications.description = tag.getAttribute("content") || "";
+    const metaTags = document.getElementsByTagName("meta");
+    for (let i = 0; i < metaTags.length; i++) {
+        const meta = metaTags[i];
+        if (meta.name === "description") {
+            specifications.description = meta.content;
+            return;
         }
-    });
+    }
 }
