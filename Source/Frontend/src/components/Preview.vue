@@ -1,7 +1,7 @@
 <template>
     <section id="preview">
         <div class="flex row col-center">
-            <h2 class="m-y-2 text h-4">
+            <h2 class="m-b-2 text h-4">
                 SERP Vorschau
             </h2>
         </div>

@@ -1,7 +1,7 @@
 <template>
     <section id="output">
         <div class="flex row col-center space-between">
-            <h2 class="m-y-2 text h-4">
+            <h2 class="m-b-2 text h-4">
                 Ausgabe
             </h2>
             <button class="btn primary shadow round" @click="copyToClipboard">

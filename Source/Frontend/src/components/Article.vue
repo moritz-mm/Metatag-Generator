@@ -8,6 +8,7 @@
                     Was sind die wichtigsten Meta Tags?
                 </h1>
             </div>
+            <hr class="hr" />
             <p class="text h-6">
                 Inhalt
             </p>

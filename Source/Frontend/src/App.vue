@@ -1,10 +1,16 @@
 <template>
     <Header />
-    <main class="flex col col-center p-a-2">
-        <Preview />
-        <Input />
-        <Output />
-        <Article />
+    <main class="flex col">
+        <div class="box shadow outline-top outline-bottom">
+            <section class="mobile m-y-block-2 p-a-2">
+                <Preview />
+                <Input />
+                <Output />
+            </section>
+        </div>
+        <section class="mobile p-a-2">
+            <Article />
+        </section>
     </main>
     <Footer />
 </template>
@@ -33,7 +39,7 @@ export default defineComponent({
 
 <style>
   @media only screen and (min-width: 1025px)  {
-    main {
+    .mobile {
       width: 50%;
       margin: auto;
     }
