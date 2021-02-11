@@ -25,11 +25,11 @@
                 Erst mal. Was sind überhaupt Meta Tags?
             </h2>
             <p class="text h-6">
-                <abbr title="Hypertext Markup Language">HTML</abbr> Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
+                <abbr class="abbr" title="Hypertext Markup Language">HTML</abbr> Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
                 Meta Tags sind dafür da, den Inhalt einer Webseite zu beschreiben, sodass Suchmaschinen ihn in den Suchergebnissen präsentieren können.
             </p>
             <p class="text h-6">
-                Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (<abbr title="Suchmaschinenoptimierung">SEO</abbr>) sortiert beschrieben:
+                Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (<abbr class="abbr" title="Suchmaschinenoptimierung">SEO</abbr>) sortiert beschrieben:
             </p>
 
             <h2 id="title-tag" class="text h-3">
@@ -40,7 +40,7 @@
             </code>
             <p class="text h-6">
                 Der Titel Tag ist das Erste, was ein User in den Suchergebnissen von ihrer Webseite sieht, deswegen ist er der 
-                wichtigste Tag für Suchmaschinenoptimierung (<abbr title="Suchmaschinenoptimierung">SEO</abbr>). 
+                wichtigste Tag für Suchmaschinenoptimierung (<abbr class="abbr" title="Suchmaschinenoptimierung">SEO</abbr>). 
             </p>
             <p class="text h-6">
                 So sieht der optimale Titel Tag aus:
@@ -49,7 +49,7 @@
                 <li>• Sollte nicht länger als <strong>70 Zeichen</strong> sein.</li>
                 <li>• Maximal <strong>580 pixel</strong> sonst wird der Titel auf Desktops abgeschnitten.</li>
                 <li>• Primärkeyword muss am Anfang stehen.</li>
-                <li>• Füg Zahlen hinzu z.B. "Die <strong>5</strong> wichtigsten Keywörter für <abbr title="Suchmaschinenoptimierung">SEO</abbr> in 2021."</li>
+                <li>• Füg Zahlen hinzu z.B. "Die <strong>5</strong> wichtigsten Keywörter für <abbr class="abbr" title="Suchmaschinenoptimierung">SEO</abbr> in 2021."</li>
                 <li>• Benutze nicht zu viele Keywörter. (<a class="link primary" target="_blank" rel="noreferrer noopener" href="https://www.seo-kueche.de/lexikon/keyword-stuffing/">Keyword stuffing</a>)</li>
                 <li>• Jede Seite sollte ein einzigartigen Titel haben.</li>
             </ul>
@@ -62,7 +62,7 @@
                 &lt;meta name="description" content="Hier kommt deine Meta Beschreibung rein." /&gt;
             </code>
             <p class="text h-6">
-                Die Beschreibung wird von Suchmaschinen wie Google zwar nicht mehr für <a class="link primary" target="_blank" rel="noreferrer noopener" href="https://de.wikipedia.org/wiki/Suchmaschinenoptimierung">Suchmaschinenoptimierung (<abbr title="Suchmaschinenoptimierung">SEO</abbr>)</a> verwendet, 
+                Die Beschreibung wird von Suchmaschinen wie Google zwar nicht mehr für <a class="link primary" target="_blank" rel="noreferrer noopener" href="https://de.wikipedia.org/wiki/Suchmaschinenoptimierung">Suchmaschinenoptimierung (<abbr class="abbr" title="Suchmaschinenoptimierung">SEO</abbr>)</a> verwendet, 
                 ist aber dennoch wichtig für die Webpräsenz. Der Inhalt von <strong>content="..."</strong> wird in den Suchergebnissen direkt unter dem Titel angezeigt.
             </p>
             <p class="text h-6">

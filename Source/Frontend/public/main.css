@@ -1415,6 +1415,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.abbr, abbr[title], acronym[title] {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
 .text.strong {
   font-weight: bold;
 }
