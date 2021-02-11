@@ -24,13 +24,13 @@
             <h2 class="text h-3">
                 Erst mal. Was sind überhaupt Meta Tags?
             </h2>
-            <blockquote class="text h-6">
-                Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
+            <p class="text h-6">
+                <abbr title="Hypertext Markup Language">HTML</abbr> Meta Tags sind versteckte für den User und befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;</strong> Tag einer Webseite.
                 Meta Tags sind dafür da, den Inhalt einer Webseite zu beschreiben, sodass Suchmaschinen ihn in den Suchergebnissen präsentieren können.
-            </blockquote>
-            <blockquote class="text h-6">
-                Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (SEO) sortiert beschrieben:
-            </blockquote>
+            </p>
+            <p class="text h-6">
+                Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (<abbr title="Suchmaschinenoptimierung">SEO</abbr>) sortiert beschrieben:
+            </p>
 
             <h2 id="title-tag" class="text h-3">
                 1. Der Titel Tag
@@ -38,10 +38,10 @@
             <code class="box neutral round p-a-1 text h-6">
                 &lt;title&gt;Hier kommt dein Titel rein.&lt;/title&gt;
             </code>
-            <blockquote class="text h-6">
+            <p class="text h-6">
                 Der Titel Tag ist das Erste, was ein User in den Suchergebnissen von ihrer Webseite sieht, deswegen ist er der 
-                wichtigste Tag für Suchmaschinenoptimierung (SEO). 
-            </blockquote>
+                wichtigste Tag für Suchmaschinenoptimierung (<abbr title="Suchmaschinenoptimierung">SEO</abbr>). 
+            </p>
             <p class="text h-6">
                 So sieht der optimale Titel Tag aus:
             </p>
@@ -49,7 +49,7 @@
                 <li>• Sollte nicht länger als <strong>70 Zeichen</strong> sein.</li>
                 <li>• Maximal <strong>580 pixel</strong> sonst wird der Titel auf Desktops abgeschnitten.</li>
                 <li>• Primärkeyword muss am Anfang stehen.</li>
-                <li>• Füg Zahlen hinzu z.B. "Die <strong>5</strong> wichtigsten Keywörter für SEO in 2021."</li>
+                <li>• Füg Zahlen hinzu z.B. "Die <strong>5</strong> wichtigsten Keywörter für <abbr title="Suchmaschinenoptimierung">SEO</abbr> in 2021."</li>
                 <li>• Benutze nicht zu viele Keywörter. (<a class="link primary" target="_blank" rel="noreferrer noopener" href="https://www.seo-kueche.de/lexikon/keyword-stuffing/">Keyword stuffing</a>)</li>
                 <li>• Jede Seite sollte ein einzigartigen Titel haben.</li>
             </ul>
@@ -61,10 +61,10 @@
             <code class="box neutral round p-a-1 text h-6">
                 &lt;meta name="description" content="Hier kommt deine Meta Beschreibung rein." /&gt;
             </code>
-            <blockquote class="text h-6">
-                Die Beschreibung wird von Suchmaschinen wie Google zwar nicht mehr für <a class="link primary" target="_blank" rel="noreferrer noopener" href="https://de.wikipedia.org/wiki/Suchmaschinenoptimierung">Suchmaschinenoptimierung (SEO)</a> verwendet, 
+            <p class="text h-6">
+                Die Beschreibung wird von Suchmaschinen wie Google zwar nicht mehr für <a class="link primary" target="_blank" rel="noreferrer noopener" href="https://de.wikipedia.org/wiki/Suchmaschinenoptimierung">Suchmaschinenoptimierung (<abbr title="Suchmaschinenoptimierung">SEO</abbr>)</a> verwendet, 
                 ist aber dennoch wichtig für die Webpräsenz. Der Inhalt von <strong>content="..."</strong> wird in den Suchergebnissen direkt unter dem Titel angezeigt.
-            </blockquote>
+            </p>
             <p class="text h-6">
                 So sieht die optimale Meta Beschreibung aus:
             </p>
@@ -83,10 +83,10 @@
             <code class="box neutral round p-a-1 text h-6">
                 &lt;img src="..." alt="Hier kommt die Bildbeschreibung rein." /&gt;
             </code>
-            <blockquote class="text h-6">
+            <p class="text h-6">
                 Das Alt-Tag ist für alle Bilder wichtig, da Suchmaschinen nicht alle Bilder lesen können.
                 Daher muss jeder <strong>&lt;img /&gt;</strong> Tag ein Alt-Text haben, damit die Suchmaschine das Bild lesen kann.
-            </blockquote>
+            </p>
             <p class="text h-6">
                 So sieht die optimale Bildbeschreibung aus:
             </p>
@@ -99,9 +99,9 @@
             <h2 id="social-media" class="text h-3">
                 4. Meta Tags für soziale Medien wie Facebook, Twitter und co.
             </h2>
-            <blockquote class="text h-6">
+            <p class="text h-6">
                 Wenn jemand deine Webseite auf Facebook, Twitter und co. verlinkt, geben die Plattformen eine Möglichkeit, den Link "schön" darzustellen.
-            </blockquote>
+            </p>
             <h3 class="text h-5">
                 Open Graph Tags:
             </h3>
@@ -130,10 +130,10 @@
             <code class="box neutral round p-a-1 text h-6">
                 &lt;meta charset="UTF-8" /&gt;
             </code>
-            <blockquote class="text h-6">
+            <p class="text h-6">
                 Der Meta-Charset-Tag setzt die Codierung für eine Webseite fest.
                 Er beschreibt, wie der Browser die Webseite anzeigen soll, damit zum Beispiel Umlaute richtig dargestellt werden.
-            </blockquote>
+            </p>
 
             <h2 id="meta-viewport" class="text h-3">
                 6. Meta-Viewport
@@ -141,10 +141,10 @@
             <code class="box neutral round p-a-1 text h-6">
                 &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
             </code>
-            <blockquote class="text h-6">
+            <p class="text h-6">
                 Der Meta-Viewport beschreibt, wie der sichtbare Bereich einer Webseite dargestellt werden soll.
                 Er wird dafür genutzt, um dem Browser zu mitzuteilen, wie eine Seite für verschiedene Bildschirmgrößen aussehen soll.
-            </blockquote>
+            </p>
         </section>
     </article>
 </template>
