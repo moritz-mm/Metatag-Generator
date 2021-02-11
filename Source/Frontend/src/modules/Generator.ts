@@ -19,7 +19,7 @@ export async function fetchMetaTags(url: string) {
         headers: {
             "Content-Type": "text/html"
         }
-    }).catch(err => console.warn(`Die Website zu der Url "${url}" wurde nicht gefunden.`));
+    }).catch(() => console.warn(`Die Website zu der Url "${url}" wurde nicht gefunden.`));
 
     if (response !== undefined) {
         const domParser = new DOMParser();
