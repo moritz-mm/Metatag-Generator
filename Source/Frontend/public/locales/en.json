@@ -1,0 +1,30 @@
+{
+    "preview-heading": "SERP Preview",
+    "preview-url-example": "example.com",
+    "preview-title-example": "This is an example title.",
+    "preview-description-example": "This is an example description.",
+
+    "input-heading": "Meta data",
+    "input-website-label": "Website",
+    "input-website-placeholder": "https://example.com/",
+
+    "input-title-label": "Title",
+    "input-title-placeholder": "The title should describe what you can expect from the content of a website.",
+    "input-title-length-warning": "A title tag should not be longer than <strong> 70 </strong> characters.",
+    "input-title-pixel-warning": "A title tag that is wider than <strong> 580 pixels </strong> will be truncated on <strong> desktops </strong>.",
+
+    "input-description-label": "Description",
+    "input-description-placeholder": "The description is a brief summary of the content of a web page.",
+    "input-description-length-warning": "A meta description should not be longer than <strong> 160 </strong> characters.",
+    "input-description-desktop-warning": "A meta description that is wider than <strong> 920 pixels </strong> will be cut off on <strong> Desktops </strong>.",
+    "input-description-mobile-warning": "A meta description that is wider than <strong> 680 pixels </strong> is used on <strong> smartphones </strong>.",
+
+    "input-preview-image-label": "Preview url",
+    "input-preview-image-placeholder": "https://example.com/preview.png",
+
+    "input-search-button": "Search",
+
+    "output-heading": "Output",
+    "output-copy-text-button": "Copy Text",
+    "output-description": "Copy the meta tags into the <strong>&lt;head&gt;...&lt;/head&gt;</strong> tag."
+}

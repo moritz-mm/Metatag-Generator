@@ -2,25 +2,25 @@
     <section id="input" class="flex col">
         <div class="flex row col-center">
             <h2 class="m-b-2 text h-4">
-                Metadaten
+                {{ message['input-heading'] }}
             </h2>
         </div>
         <form class="box outline round p-a-2 m-y-block-2">
             <fieldset class="flex col">
                 <label for="website" class="text strong">
-                    Webseite
+                    {{ message['input-website-label'] }}
                 </label>
                 <div class="flex row">
-                    <input id="website" class="input round m-r-1" style="width: 100%" type="url" placeholder="https://example.com/" v-model="website" />
+                    <input id="website" class="input round m-r-1" style="width: 100%" type="url" :placeholder="message['input-website-placeholder']" v-model="website" />
                     <button class="btn round primary outline" @click.stop.prevent="fetchMetaTags(website)">
-                        Suchen
+                        {{ message['input-search-button'] }}
                     </button>
                 </div>
             </fieldset>
             <fieldset class="flex col">
                 <div class="flex row space-between">
                     <label for="title" class="text strong">
-                        Titel 
+                        {{ message['input-title-label'] }} 
                     </label>
                     <div class="flex row m-x-block-2">
                         <p>
@@ -34,14 +34,14 @@
                         </p>
                     </div>
                 </div>
-                <input id="title" class="input round" type="text" placeholder="Der Titel sollte beschreiben was man von dem Inhalt einer Webseite erwarten kann." v-model="title" />
-                <Warning v-show="title.length > 70" message="Ein Titel Tag, sollte nicht länger als <strong>70</strong> Zeichen sein." />
-                <Warning v-show="titleWidth > 580" message="Ein Titel Tag, der breiter als <strong>580 pixel</strong> ist, wird auf <strong>Desktops</strong> abgeschnitten." />
+                <input id="title" class="input round" type="text" :placeholder="message['input-title-placeholder']" v-model="title" />
+                <Warning v-if="title.length > 70" :message="message['input-title-length-warning']" />
+                <Warning v-if="titleWidth > 580" :message="message['input-title-pixel-warning']" />
             </fieldset>
             <fieldset class="flex col">
                 <div class="flex row space-between">
                     <label for="description" class="text strong">
-                        Beschreibung
+                        {{ message['input-description-label'] }}
                     </label>
                     <div class="flex row m-x-block-2">
                         <p>
@@ -55,16 +55,16 @@
                         </p>
                     </div>
                 </div>
-                <textarea id="description" class="input round" placeholder="Die Beschreibung ist eine kurze Zusammenfassung des Inhalts einer Webseite." v-model="description"></textarea>
-                <Warning v-show="description.length > 160" message="Eine Meta Beschreibung, sollte nicht länger als <strong>160</strong> Zeichen sein." />
-                <Warning v-show="descriptionWidth > 680" message="Eine Meta Beschreibung, die breiter als <strong>680 pixel</strong> ist, wird auf <strong>Smartphones</strong> abgeschnitten." />
-                <Warning v-show="descriptionWidth > 920" message="Eine Meta Beschreibung, die breiter als <strong>920 pixel</strong> ist, wird auf <strong>Desktops</strong> abgeschnitten." />
+                <textarea id="description" class="input round" :placeholder="message['input-description-placeholder']" v-model="description"></textarea>
+                <Warning v-if="description.length > 160" :message="message['input-description-length-warning']" />
+                <Warning v-if="descriptionWidth > 920" :message="message['input-description-desktop-warning']" />
+                <Warning v-if="descriptionWidth > 680" :message="message['input-description-mobile-warning']" />
             </fieldset>
             <fieldset class="flex col">
                 <label for="imageUrl" class="text strong">
-                    Link zum Vorschaubild
+                    {{ message['input-preview-image-label'] }}
                 </label>
-                <input id="imageUrl" class="input round" type="url" placeholder="https://example.com/preview.png" v-model="imageUrl" />
+                <input id="imageUrl" class="input round" type="url" :placeholder="message['input-preview-image-placeholder']" v-model="imageUrl" />
             </fieldset>
         </form>
     </section>
@@ -74,6 +74,7 @@
 import { computed, defineComponent, toRefs } from "vue";
 import { specifications, fetchMetaTags } from '../modules/Generator';
 import { measureTextWidth, googleTitleFont, googleDescriptionFont } from '../modules/TextMesurer';
+import { message } from '../modules/Localizer';
 import Warning from './Warning.vue';
 
 export default defineComponent({
@@ -89,7 +90,8 @@ export default defineComponent({
             ...toRefs(specifications),
             titleWidth,
             descriptionWidth,
-            fetchMetaTags
+            fetchMetaTags,
+            message
         }
     }
 });

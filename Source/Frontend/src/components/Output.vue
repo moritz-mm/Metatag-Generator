@@ -2,15 +2,13 @@
     <section id="output">
         <div class="flex row col-center space-between">
             <h2 class="m-b-2 text h-4">
-                Ausgabe
+                {{ message['output-heading'] }}
             </h2>
             <button class="btn primary shadow round" @click="copyToClipboard">
-                Text Kopieren
+                {{ message['output-copy-text-button'] }}
             </button>
         </div>
-        <p class="m-b-1">
-            Die Metatags müssen in den <strong>&lt;head&gt;...&lt;/head&gt;</strong> rein kopiert werden.
-        </p>
+        <p class="m-b-1" v-html="message['output-description']"></p>
         <p class="box neutral round p-a-2 text h-6 wrap" contenteditable="true" spellcheck="false" style="white-space: pre-line">
             {{ generatedMeta }}
         </p>
@@ -20,6 +18,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import { specifications } from '../modules/Generator';
+import { message } from '../modules/Localizer';
 import Input from "./Input.vue";
 
 export default defineComponent({
@@ -53,7 +52,8 @@ export default defineComponent({
 
         return {
             generatedMeta,
-            copyToClipboard
+            copyToClipboard,
+            message
         };
     }
 });

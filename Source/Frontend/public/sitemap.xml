@@ -2,12 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://metatag-generator.com/</loc>
-        <lastmod>2021-02-11</lastmod>
+        <lastmod>2021-02-12</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://metatag-generator.com/en</loc>
+        <lastmod>2021-02-12</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://metatag-generator.com/de</loc>
+        <lastmod>2021-02-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.metatag-generator.com/</loc>
-        <lastmod>2021-02-11</lastmod>
+        <lastmod>2021-02-12</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.metatag-generator.com/en</loc>
+        <lastmod>2021-02-12</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.metatag-generator.com/de</loc>
+        <lastmod>2021-02-12</lastmod>
         <changefreq>daily</changefreq>
     </url>
 </urlset>

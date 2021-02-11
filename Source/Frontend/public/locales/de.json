@@ -1,0 +1,30 @@
+{
+    "preview-heading": "SERP Vorschau",
+    "preview-url-example": "example.com",
+    "preview-title-example": "Das ist ein Beispieltitel.",
+    "preview-description-example": "Das ist eine Beispielbeschreibung.",
+
+    "input-heading": "Metadaten",
+    "input-website-label": "Webseite",
+    "input-website-placeholder": "https://example.com/",
+
+    "input-title-label": "Titel",
+    "input-title-placeholder": "Der Titel sollte beschreiben was man von dem Inhalt einer Webseite erwarten kann.",
+    "input-title-length-warning": "Ein Titel Tag, sollte nicht länger als <strong>70</strong> Zeichen sein.",
+    "input-title-pixel-warning": "Ein Titel Tag, der breiter als <strong>580 pixel</strong> ist, wird auf <strong>Desktops</strong> abgeschnitten.",
+
+    "input-description-label": "Beschreibung",
+    "input-description-placeholder": "Die Beschreibung ist eine kurze Zusammenfassung des Inhalts einer Webseite.",
+    "input-description-length-warning": "Eine Meta Beschreibung, sollte nicht länger als <strong>160</strong> Zeichen sein.",
+    "input-description-desktop-warning": "Eine Meta Beschreibung, die breiter als <strong>920 pixel</strong> ist, wird auf <strong>Desktops</strong> abgeschnitten.",
+    "input-description-mobile-warning": "Eine Meta Beschreibung, die breiter als <strong>680 pixel</strong> ist, wird auf <strong>Smartphones</strong> abgeschnitten.",
+
+    "input-preview-image-label": "Link zum Vorschaubild",
+    "input-preview-image-placeholder": "https://example.com/preview.png",
+
+    "input-search-button": "Suchen",
+
+    "output-heading": "Ausgabe",
+    "output-copy-text-button": "Text Kopieren",
+    "output-description": "Die Metatags müssen in den <strong>&lt;head&gt;...&lt;/head&gt;</strong> rein kopiert werden."
+}

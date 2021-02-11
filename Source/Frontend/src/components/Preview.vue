@@ -2,19 +2,19 @@
     <section id="preview">
         <div class="flex row col-center">
             <h2 class="m-b-2 text h-4">
-                SERP Vorschau
+                {{ message['preview-heading'] }}
             </h2>
         </div>
         <div class="box outline shadow round p-a-2">
             <div id="googleContent">
                 <p id="googleUrl">
-                    {{ website || "example.com" }}
+                    {{ website || message['preview-url-example'] }}
                 </p>
                 <p id="googleTitle">
-                    {{ title || "Das ist ein Beispieltitel." }}
+                    {{ title || message['preview-title-example'] }}
                 </p>
                 <p id="googleDescription">
-                    {{ description || "Das ist eine Beispielbeschreibung." }}
+                    {{ description || message['preview-description-example'] }}
                 </p>
             </div>
         </div>
@@ -24,6 +24,7 @@
 <script lang="ts">
 import { computed, defineComponent } from "vue";
 import { specifications } from '../modules/Generator';
+import { message } from '../modules/Localizer';
 
 export default defineComponent({
     name: "Preview",
@@ -42,7 +43,8 @@ export default defineComponent({
         return {
             title,
             description,
-            website
+            website,
+            message
         }
     }
 });

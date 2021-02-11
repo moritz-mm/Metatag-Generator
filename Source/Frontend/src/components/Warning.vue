@@ -1,6 +1,6 @@
 <template>
     <div class="flex row col-center m-y-1">
-        <img src="../assets/Warning.svg" alt="Warnung Symbol" height="25" width="25" />
+        <img src="../assets/Warning.svg" alt="Warning Icon" height="25" width="25" />
         <p class="text h-6 m-l-1" v-html="message"></p>
     </div>    
 </template>
