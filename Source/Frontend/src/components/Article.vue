@@ -12,7 +12,7 @@
             <p class="text h-6">
                 Inhalt
             </p>
-            <nav class="text h-6">
+            <nav class="text h-5 m-y-block-1">
                 <a class="link primary" href="#title-tag">1. Der Titel Tag</a> <br />
                 <a class="link primary" href="#meta-description">2. Die Meta Beschreibung</a> <br />
                 <a class="link primary" href="#alt-text">3. Der alternativ Text für Bilder</a> <br />
