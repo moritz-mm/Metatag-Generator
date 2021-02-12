@@ -12,7 +12,7 @@
                 </label>
                 <div class="flex row">
                     <input id="website" class="input round m-r-1" style="width: 100%" type="url" placeholder="https://example.com/" v-model="website" />
-                    <button class="btn round primary outline" @click.stop.prevent="fetchMetaTags(website)">
+                    <button class="btn round primary outline" @click.stop.prevent="fetchMetaTags(website)" :disabled="!website">
                         Suchen
                     </button>
                 </div>
