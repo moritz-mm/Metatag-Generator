@@ -13,10 +13,10 @@
                 Inhalt
             </p>
             <nav class="text h-5 m-y-block-1">
-                <a class="link primary" href="#title-tag">1. Der Titel Tag</a> <br />
-                <a class="link primary" href="#meta-description">2. Die Meta Beschreibung</a> <br />
-                <a class="link primary" href="#alt-text">3. Der alternativ Text für Bilder</a> <br />
-                <a class="link primary" href="#social-media">4. Meta Tags für soziale Medien wie Facebook, Twitter und co.</a> <br />
+                <a class="link primary" href="#title-tag">1. Title Tag</a> <br />
+                <a class="link primary" href="#meta-description">2. Meta Description</a> <br />
+                <a class="link primary" href="#alt-text">3. Alt Text für Bilder</a> <br />
+                <a class="link primary" href="#social-media">4. Open Graph Tags und Twitter Cards</a> <br />
                 <a class="link primary" href="#meta-charset">5. Meta-Charset</a> <br />
                 <a class="link primary" href="#meta-viewport">6. Meta-Viewport</a> <br />
             </nav>
@@ -34,7 +34,7 @@
             </p>
 
             <h2 id="title-tag" class="text h-3">
-                1. Der Titel Tag
+                1. Title Tag
             </h2>
             <code class="box neutral round p-a-1 text h-6">
                 &lt;title&gt;Hier kommt dein Titel rein.&lt;/title&gt;
@@ -57,7 +57,7 @@
 
 
             <h2 id="meta-description" class="text h-3">
-                2. Die Meta Beschreibung
+                2. Meta Description
             </h2>
             <code class="box neutral round p-a-1 text h-6">
                 &lt;meta name="description" content="Hier kommt deine Meta Beschreibung rein." /&gt;
@@ -79,7 +79,7 @@
 
 
             <h2 id="alt-text" class="text h-3">
-                3. Der alternativ Text für Bilder
+                3. Alt Text für Bilder
             </h2>
             <code class="box neutral round p-a-1 text h-6">
                 &lt;img src="..." alt="Hier kommt die Bildbeschreibung rein." /&gt;
@@ -98,7 +98,7 @@
             </ul>
 
             <h2 id="social-media" class="text h-3">
-                4. Meta Tags für soziale Medien wie Facebook, Twitter und co.
+                4. Open Graph Tags und Twitter Cards
             </h2>
             <p class="text h-6">
                 Wenn jemand deine Webseite auf Facebook, Twitter und co. verlinkt, geben die Plattformen eine Möglichkeit, den Link "schön" darzustellen.
