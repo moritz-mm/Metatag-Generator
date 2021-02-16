@@ -8,7 +8,7 @@
         <div class="box outline shadow round p-a-2">
             <div id="googleContent">
                 <p id="googleUrl">
-                    {{ website || "example.com" }}
+                    {{ getHostname(website) || "example.com" }}
                 </p>
                 <p id="googleTitle">
                     {{ title || "Das ist ein Beispieltitel." }}
@@ -28,9 +28,14 @@ import { specifications } from '../modules/Generator';
 export default defineComponent({
     name: "Preview",
     setup() {
-        const website = computed(() => truncate(specifications.website, 70).trim());
+        const website = computed(() => truncate(specifications.website, 70).trim().toLowerCase());
         const title = computed(() => specifications.title.trim());
         const description = computed(() => truncate(specifications.description, 160).trim());
+
+        function getHostname(url: string) {
+            const matches = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+            return matches && matches[1];
+        }
 
         function truncate(text: string, cutAt: number) {
             if (text.length > cutAt) {
@@ -42,7 +47,8 @@ export default defineComponent({
         return {
             title,
             description,
-            website
+            website,
+            getHostname
         }
     }
 });
