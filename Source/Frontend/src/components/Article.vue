@@ -2,6 +2,8 @@
     <article itemscope itemtype="http://schema.org/Article">
         <meta itemprop="publisher" content="metatag-generator.com" />
         <meta itemprop="image" content="https://metatag-generator.com/preview.png" />
+
+
         <section itemprop="articleBody" class="flex col m-t-2 m-y-block-2">
             <div class="flex row center">
                 <h1 itemprop="name headline" class="text h-1 m-y-2">
@@ -31,6 +33,26 @@
             </p>
             <p class="text h-6">
                 Hier sind die <strong>wichtigsten Meta Tags</strong> nach Priorität für <strong>Suchmaschinenoptimierung</strong> (<abbr class="abbr" title="Suchmaschinenoptimierung">SEO</abbr>) sortiert beschrieben:
+            </p>
+
+            <h2 class="text h-3">
+                Welche Meta Tags sind wichtig für SEO?
+            </h2>
+            <p class="text h-6">
+                Die SEO-Community ist sich bei diesem Thema einig: Der wichtigste Meta-Tag für das Ranking ist der Titel-Tag.
+            </p>
+            <p class="text h-6">
+                Kein anderer Meta-Tag im <strong>&lt;head&gt;...&lt;/head&gt;-Bereich</strong> sonst beeinflusst das SEO-Ranking ansich.
+                Das heißt aber nicht, dass andere Tags auf der gesamten Webseite unwichtig sind!
+            </p>
+            <h2 class="text h-5">
+                Das war nicht immer so...
+            </h2>
+            <p class="text h-6">
+                In der Vergangenheit war der <strong>&lt;keyword&gt;...&lt;/keyword&gt;-Meta-Tag</strong> ein wichtiger Bestandteil des Rankings, da frühe Suchmaschinen-Roboter diesen Wert zur Kategorisierung von Webseiten verwendet haben.
+            </p>
+            <p class="text h-6">
+                Im Jahr 2009 machte <a class="link primary" target="_blank" ref="noreferrer noopener" href="https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag">Google jedoch offiziell</a>, dass der <strong>&lt;keyword&gt;...&lt;/keyword&gt;-Meta-Tag</strong> nicht mehr Teil des Rankings ist und Ihr Ranking potenziell sogar <strong>beeinträchtigen</strong> kann, wenn er missbraucht wird.
             </p>
 
             <h2 id="title-tag" class="text h-3">
@@ -101,7 +123,13 @@
                 4. Open Graph Tags und Twitter Cards
             </h2>
             <p class="text h-6">
-                Wenn jemand deine Webseite auf Facebook, Twitter und co. verlinkt, geben die Plattformen eine Möglichkeit, den Link "schön" darzustellen.
+                Open Graph-Meta-Tags sollen beschreiben, wie URLs auf sozialen Medien grafisch dargestellt werden.
+            </p>
+            <p class="text h-6">
+                Sie sind Teil des Open-Graph-Protokolls von <strong>Facebook</strong> und werden auch von anderen Social-Media-Webseiten verwendet, wie zum Beispiel: <strong>Pinterest</strong>, <strong>Linkedin</strong> und <strong>Twitter</strong> (wenn Twitter Cards nicht vorhanden sind).
+            </p>
+            <p class="text h-6">
+                Sie befinden sich im <strong>&lt;head&gt;...&lt;/head&gt;-Bereich</strong> einer Webseite und haben ein og: Präfix vor dem Propertynamen.
             </p>
             <h3 class="text h-5">
                 Open Graph Tags:
