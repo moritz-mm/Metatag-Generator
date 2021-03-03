@@ -52,7 +52,7 @@
                 In der Vergangenheit war die <strong>"keyword"-Property</strong> ein wichtiger Bestandteil des Rankings, da frühe Suchmaschinen-Roboter diesen Wert zur Kategorisierung von Webseiten verwendet haben.
             </p>
             <p class="text h-6">
-                Im Jahr 2009 machte <a class="link primary" target="_blank" ref="noreferrer noopener" href="https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag">Google jedoch offiziell</a>, dass die <strong>"keyword"-Property</strong> nicht mehr Teil des Rankings ist und Ihr Ranking potenziell sogar <strong>beeinträchtigen</strong> kann, wenn die Property <strong>missbraucht</strong> wird.
+                Im Jahr 2009 machte <a class="link primary" target="_blank" rel="noreferrer noopener" href="https://developers.google.com/search/blog/2009/09/google-does-not-use-keywords-meta-tag">Google jedoch offiziell</a>, dass die <strong>"keyword"-Property</strong> nicht mehr Teil des Rankings ist und Ihr Ranking potenziell sogar <strong>beeinträchtigen</strong> kann, wenn die Property <strong>missbraucht</strong> wird.
             </p>
 
             <h2 id="title-tag" class="text h-3">
