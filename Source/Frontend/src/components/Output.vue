@@ -27,27 +27,27 @@ export default defineComponent({
     name: "Output",
     setup() {
         const generatedMeta = computed(() =>
-            `<!-- Primäre Meta Tags -->
-            <meta charset="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-            
-            <title>${specifications.title}</title>
-            <meta name="title" content="${specifications.title}">
-            <meta name="description" content="${specifications.description}">
+`<!-- Primäre Meta Tags -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-            <!-- Open Graph Meta Tags -->
-            <meta property="og:type" content="website">
-            <meta property="og:title" content="${specifications.title}">
-            <meta property="og:description" content="${specifications.description}">
-            <meta property="og:url" content="${specifications.website}">
-            <meta property="og:image" content="${specifications.imageUrl}">
+<title>${specifications.title}</title>
+<meta name="title" content="${specifications.title}">
+<meta name="description" content="${specifications.description}">
 
-            <!-- Twitter Meta Tags -->
-            <meta property="twitter:card" content="summary_large_image">
-            <meta property="twitter:title" content="${specifications.title}">
-            <meta property="twitter:description" content="${specifications.description}">
-            <meta property="twitter:url" content="${specifications.website}">
-            <meta property="twitter:image" content="${specifications.imageUrl}">`
+<!-- Open Graph Meta Tags -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="${specifications.title}">
+<meta property="og:description" content="${specifications.description}">
+<meta property="og:url" content="${specifications.website}">
+<meta property="og:image" content="${specifications.imageUrl}">
+
+<!-- Twitter Meta Tags -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:title" content="${specifications.title}">
+<meta property="twitter:description" content="${specifications.description}">
+<meta property="twitter:url" content="${specifications.website}">
+<meta property="twitter:image" content="${specifications.imageUrl}">`
         );
 
         async function copyToClipboard() {
