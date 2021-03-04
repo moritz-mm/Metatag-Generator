@@ -5,7 +5,7 @@
                 Metadaten
             </h2>
         </div>
-        <form class="box outline round p-a-2 m-y-block-2">
+        <form class="m-y-block-2">
             <fieldset class="flex col">
                 <label for="website" class="text strong">
                     Webseite
