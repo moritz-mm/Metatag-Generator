@@ -10,12 +10,7 @@
                 <label for="website" class="text strong">
                     Webseite
                 </label>
-                <div class="flex row">
-                    <input id="website" class="input round m-r-1" style="width: 100%" type="url" placeholder="https://example.com/" v-model="website" />
-                    <button class="btn round primary outline" @click.stop.prevent="fetchMetaTags(website)" :disabled="!website">
-                        Suchen
-                    </button>
-                </div>
+                <input id="website" class="input round m-r-1" style="width: 100%" type="url" placeholder="https://example.com/" v-model="website" />
             </fieldset>
             <fieldset class="flex col">
                 <div class="flex row space-between">
@@ -72,7 +67,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, toRefs } from "vue";
-import { specifications, fetchMetaTags } from '../modules/Generator';
+import { specifications } from '../modules/Generator';
 import { measureTextWidth, googleTitleFont, googleDescriptionFont } from '../modules/TextMesurer';
 import Warning from './Warning.vue';
 
@@ -88,8 +83,7 @@ export default defineComponent({
         return { 
             ...toRefs(specifications),
             titleWidth,
-            descriptionWidth,
-            fetchMetaTags
+            descriptionWidth
         }
     }
 });
